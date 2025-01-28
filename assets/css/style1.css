@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wrapper{
+    background-image: url("../../images/login-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1700px;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 930px;
+    height: 660px;
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, .2);
+    background-color: rgb(255 255 255 / 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    border-radius: 10px 0 0 10px;
+    background-color: #76a004;
+    padding-top: 138px;
+    position: relative;
+   
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    margin-top: 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+.input-box header {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: left;
+    margin-top: -50px;
+    margin-bottom: 5px;
+}
+.input-box header2 {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: left;
+    margin-top: -8px;
+}
+.user-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.verification-form, .reset-verification-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.forget-pass {
+    text-align: right;
+    font-size: small;
+    margin-top: 2px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fac43c;
+}
+.forget-pass a{
+    text-shadow: 1px 1px 2px black;
+}
+
+.input-field {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.input-field2 {
+    width: 100%;
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+input, button{
+    border: none;
+    outline: none;
+    background: #838181;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+input{
+    width: 100%;
+    background: #e6e6e6;
+    color: #000;
+    padding: 10px 64px;
+}
+input ~ i{
+    position: absolute;
+    left: 32px;
+    top: 63px;
+    transform: translateY(-50px);
+    color: #888;
+}
+input:focus ~ i{
+    color: #76a004;
+}
+.eye-area {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.eye-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+i #eye, #eye-slash {
+    position: absolute;
+    color: #888;
+    cursor: pointer;
+}
+#eye {
+    color: #888;
+    opacity: 1;
+}
+#eye-slash {
+    opacity: 0;
+}
+
+i #eye2, #eye-slash2 {
+    position: absolute;
+    color: #888;
+    cursor: pointer;
+}
+#eye2 {
+    color: #888;
+    opacity: 1;
+}
+#eye-slash2 {
+    opacity: 0;
+}
+input.submit {
+    background: #fac43c;
+    margin-top: 2px;
+    padding: 14px 64px;
+    letter-spacing: 2px;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 0.4s;
+}
+.login-customer{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.submit:hover {
+    background: #76a004;
+    color: #fff;
+}
+.signup{
+    text-align: center;
+    font-size: small;
+    margin-bottom: 5px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #fac43c;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #76a004;
+}
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 30px 30px;
+        background-size: 140px;
+    }
+  
+}
